@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    style="@style/Theme.UGE100"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        style="@style/Theme.UGE100.Fone">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="20sp"
+            android:layout_marginVertical="10sp"
+            android:text="User"
+            android:gravity="center"
+            android:textSize="20sp"
+            style="@style/Theme.UGE100"
+            android:background="#00000000"/>
+
+        <ImageView
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            style="@style/Theme.UGE100.Logo"
+            android:layout_marginHorizontal="90sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            style="@style/Theme.UGE100.Settings"
+            android:layout_width="wrap_content"
+            android:layout_height="20pt"
+            android:background="#00000000"
+            android:textSize="10dp"
+            android:layout_marginVertical="2pt"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:scrollbars="none">
+        <LinearLayout
+            android:id="@+id/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/theory"
+                style="@style/Theme.UGE100.Theories"
+                android:layout_width="474dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="1" />
+
+            <ImageButton
+                android:id="@+id/tests"
+                style="@style/Theme.UGE100.Tests"
+                android:layout_width="474dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="1" />
+
+            <ImageButton
+                android:id="@+id/practice"
+                style="@style/Theme.UGE100.Practice"
+                android:layout_width="475dp"
+                android:layout_height="wrap_content"
+                android:scaleX="0.9"
+                android:scaleY="1" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
